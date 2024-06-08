@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Condiciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="root" class="min-h-screen flex flex-col p-20 gap-52">
+      <section class="w-full max-w-5xl mx-auto">
+        <h2 class="text-center text-lg mb-10 font-semibold">Desafio 1</h2>
+        <img
+          src="./assets/images/mandalorian.webp"
+          alt="mandalorian"
+          class="h-72 w-72 mx-auto border-red-600"
+          id="mandalorian"
+        />
+      </section>
+      <section class="w-full max-w-5xl mx-auto">
+        <h2 class="text-center text-lg mb-10 font-semibold">Desafio 2</h2>
+        <p class="text-center mb-5">Puedes llevar hasta 10 stickers en total</p>
+        <form class="text-center" id="stickersForm">
+          <div class="flex gap-10 justify-center mb-5">
+            <label class="flex flex-col gap-3">
+              <img
+                src="./assets/images/pepe1.webp"
+                alt="pepe"
+                class="h-52 w-52"
+              />
+              <input
+                type="number"
+                name="sticker1"
+                class="border border-slate-300 w-52"
+              />
+            </label>
+            <label class="flex flex-col gap-3">
+              <img
+                src="./assets/images/pepe2.webp"
+                alt="pepe"
+                class="h-52 w-52"
+              />
+              <input
+                type="number"
+                name="sticker2"
+                class="border border-slate-300 w-52"
+              />
+            </label>
+            <label class="flex flex-col gap-3">
+              <img
+                src="./assets/images/pepe3.webp"
+                alt="pepe"
+                class="h-52 w-52"
+              />
+              <input
+                type="number"
+                name="sticker3"
+                class="border border-slate-300 w-52"
+              />
+            </label>
+          </div>
+          <p id="stickersFormMessage" class="mb-2"></p>
+          <button
+            type="submit"
+            class="text-center bg-blue-500 text-white px-5 py-1"
+          >
+            Verificar
+          </button>
+        </form>
+      </section>
+      <section class="w-full max-w-5xl mx-auto">
+        <h2 class="text-center text-lg mb-10 font-semibold">Desafio 3</h2>
+        <form id="passwordForm" class="text-center">
+          <div class="flex gap-1 justify-center mb-5">
+            <select name="digit1" id="digit1" class="w-10 px-2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <select name="digit2" id="digit2" class="w-10 px-2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+            <select name="digit3" id="digit3" class="w-10 px-2">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+            </select>
+          </div>
+          <p id="passwordFormMessage" class="mb-2"></p>
+          <button type="submit" class="bg-blue-500 text-white px-5 py-1">
+            Ingresar
+          </button>
+        </form>
+      </section>
+    </div>
+    <script src="./js/desafio1.js"></script>
+    <script src="./js/desafio2.js"></script>
+    <script src="./js/desafio3.js"></script>
+  </body>
+</html>
